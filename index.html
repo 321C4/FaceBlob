@@ -5,17 +5,16 @@
   <body>
     <a-scene>
     	<a-assets>
-    		<a-asset-item id="faceBlob-obj" src="models/faceDress1.obj"></a-asset-item>
-    		<a-asset-item id="faceBlob-mtl" src="models/faceDress1.mtl"></a-asset-item>
+    		<a-asset-item id="faceDress-obj" src="/models/faceDress1.obj"></a-asset-item>
+    		<a-asset-item id="faceDress-mtl" src="/models/faceDress1.mtl"></a-asset-item>
   		</a-assets>
 
-  		<a-camera position="0 1.8 5"></a-camera>
+  		<a-camera position="0 1.6 5"></a-camera>
 
-  		<a-entity obj-model="obj: #faceDress-obj; mtl: #faceDress-mtl"></a-entity>
+  		<a-entity obj-model="obj: #faceDress-obj; mtl: #faceDress-mtl" position="0 4 0" material="shader: flat"></a-entity>
 
-      <a-box color="#6173F4" opacity="0.8" depth="2"></a-box>
-      <a-sphere radius="2" position="1 1 -5"></a-sphere>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color="#62C7D1"></a-sky>
+      <a-entity light="type: ambient; color: #FFF0E5"></a-entity>
     </a-scene>
   </body>
 </html>
